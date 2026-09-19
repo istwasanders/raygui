@@ -3960,7 +3960,7 @@ int GuiTabBarEx(Rectangle bounds, char **text, int count, int *hscroll, int *act
     }
 
     // Draw tab-bar border line
-    int tabbarBorderOffset = (GuiGetStyle(TABBAR,TAB_LINE_SIDE) == 1) ? 0 : bounds.height - 1;
+    float tabbarBorderOffset = (GuiGetStyle(TABBAR,TAB_LINE_SIDE) == 1) ? 0 : bounds.height - 1;
     GuiDrawRectangle(RAYGUI_CLITERAL(Rectangle){ bounds.x, bounds.y + tabbarBorderOffset, bounds.width, 1 }, 0, BLANK, GetColor(GuiGetStyle(TABBAR, BORDER_COLOR_NORMAL)));
     //--------------------------------------------------------------------
 
